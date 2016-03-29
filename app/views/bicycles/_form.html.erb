@@ -1,0 +1,17 @@
+<%= form_for(@bicycle) do |f| %>
+  <div>
+    <%= f.label :owner %>
+    <%= f.text_field :owner %>
+  </div>
+  <div>
+    <%= f.label :color %>
+    <%= f.color_field :color %>
+  </div>
+  <div>
+    <%= f.label :year %>
+    <%= f.select :year, (Time.zone.now.year - 100)..(Time.zone.now.year + 1) %>
+  </div>
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,19 @@
+<H1>It's your bike's info!</H1>
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th>Owner</th>
+      <th>Color</th>
+      <th>Year</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @bicycle %>
+  </tbody>
+</table>
+
+
+<%= link_to 'Edit', edit_bicycle_path(@bicycle) %> |
+<%= link_to 'Back', bicycles_path %>

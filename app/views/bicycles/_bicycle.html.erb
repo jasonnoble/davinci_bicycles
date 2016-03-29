@@ -1,0 +1,8 @@
+<tr>
+  <td><%= bicycle.owner %></td>
+  <td bgcolor="<%= bicycle.color %>"></td>
+  <td><%= bicycle.year %></td>
+  <td><%= link_to 'Edit', edit_bicycle_path(bicycle) %></td>
+  <td><%= link_to 'Show', bicycle %></td>
+  <td><%= link_to 'Destroy', bicycle, method: :delete, data: {confirm: 'WHYYYYY?'} %></td>
+</tr>
